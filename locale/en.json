@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Turn fold",
+    "description": "Fold each turn's whole thinking process into a scrolling window and fold the reply, from the turn header; expand or collapse every tool call at once."
+  }
+}

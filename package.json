@@ -1,0 +1,47 @@
+{
+  "name": "dsh-turn-fold",
+  "version": "0.1.0",
+  "description": "Codex-style turn folding for DeepSeek Harness: one toggle for the whole thinking process (shown in a scrolling window) and one for the reply",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-chat"
+      ]
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.2-rc.1 <0.3.0"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "fold",
+    "collapse",
+    "chat",
+    "ui"
+  ],
+  "author": "whoishuhu",
+  "license": "MIT"
+}
